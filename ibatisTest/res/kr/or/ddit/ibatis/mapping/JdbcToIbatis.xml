@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+	
+<!-- 이 문서는 iBatis에서 처리할 SQL문을 작성하는 문서입니다. -->
+<sqlMap namespace="jdbc">
+	<select id="maxnum" resultClass="int">
+		select max(lprod_id) from lprod
+	</select>
+	
+	<select id="checkLprodGu" parameterClass="string" resultClass="int">
+		select count(*) cnt from lprod where lprod_gu = #lprod_gu#
+	</select>
+	
+	<insert id="insertLprod" parameterClass="lprodVo">
+		insert into lprod (lprod_id, lprod_gu, lprod_nm)
+		values(#lprod_id#, #lprod_gu#, #lprod_nm#)
+	</insert>
+</sqlMap>

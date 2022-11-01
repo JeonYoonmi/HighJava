@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="kr.or.ddit.ibatis.util.SqlMapClientFactory"/>
+<fullyQualifiedTypeName name="kr.or.ddit.basic.session.IMymemberDao"/>
+<fullyQualifiedTypeName name="kr.or.ddit.basic.session.MymemberDaoImpl"/>
+<fullyQualifiedTypeName name="kr.or.ddit.basic.session.IMymemberService"/>
+<fullyQualifiedTypeName name="kr.or.ddit.basic.session.MymemberServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+</qualifiedTypeNameHistroy>

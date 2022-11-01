@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<!-- 이 문서는 iBatis에서 처리할 SQL문을 작성하는 문서입니다. -->
+<sqlMap namespace="member">
+	<select id="getAllMember" resultClass="member">
+		select * from mymember
+	</select>
+	
+	<select id="checkId" parameterClass="string" resultClass="string">
+		select mem_id from mymember where mem_id = #data#
+	</select>
+	
+	<insert id="insertMember" parameterClass="member">
+		insert into mymember
+		values(#mem_id#, #mem_pass#, #mem_name#, #mem_tel#, #mem_addr#)
+	</insert>
+</sqlMap>

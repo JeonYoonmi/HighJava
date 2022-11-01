@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<!-- 이 문서는 iBatis에서 처리할 SQL문을 작성하는 문서입니다. -->
+<sqlMap namespace="member">
+	<select id="getAllMemberList" resultClass="memberVO">
+		SELECT * FROM MEMBER
+	</select>
+	
+	<select id="getMemberList" parameterClass="hashmap" resultClass="memberVO">
+		SELECT * FROM MEMBER WHERE 1=1
+		
+		<isEqual property="key" compareValue="MEM_ID">
+			AND MEM_ID LIKE '%'||#word#||'%'
+		</isEqual>
+		<isEqual property="key" compareValue="MEM_NAME">
+			AND MEM_NAME LIKE '%'||#word#||'%'
+		</isEqual>
+		<isEqual property="key" compareValue="MEM_MAIL">
+			AND MEM_MAIL LIKE '%'||#word#||'%'
+		</isEqual>
+		<isEqual property="key" compareValue="ADD">
+			AND MEM_ADD1||MEM_ADD2 LIKE '%'||#word#||'%'
+		</isEqual>
+	</select>
+</sqlMap>

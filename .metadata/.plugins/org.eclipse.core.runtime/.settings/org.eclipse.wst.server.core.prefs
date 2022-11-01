@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="C-_Users_Present_Desktop_\uC724\uBBF8_\uB300\uB355\uC778\uC7AC\uAC1C\uBC1C\uC6D0_\uC218\uC5C5\uC790\uB8CC_apache-tomcat-8.5.37" id-set\="true" location\="C\:/Users/Present/Desktop/\uC724\uBBF8/\uB300\uB355\uC778\uC7AC\uAC1C\uBC1C\uC6D0/\uC218\uC5C5\uC790\uB8CC/apache-tomcat-8.5.37" name\="apache-tomcat-8.5.37" runtime-type-id\="org.eclipse.jst.server.tomcat.runtime.85" timestamp\="0" vm-install-id\="1650679675692" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>\r\n</runtimes>\r\n
